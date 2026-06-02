@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="krjcnQXOMQsidvK5ehZCgGvzNyb25SFPtxt.txt">
+    <None Update="anagram.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

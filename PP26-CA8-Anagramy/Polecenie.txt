@@ -1,0 +1,10 @@
+﻿Zadanie 1:
+Napisz program, który w pliku anagram.txt wyszuka wszystkie wiersze,
+w których wszystkie słowa są anagramami pierwszego słowa w danym wierszu
+i zapisze je do pliku znalezione.txt.
+
+Zadanie 1.1:
+Muzeum chce ustalić, w którym roku powstało najwięcej dzieł z obecnej wystawy.
+Obrazy te zostaną oprawione w złote ramy.
+Plik lata.txt zawiera 76 wierszy zawierających rok powstania poszczególnych 
+obrazów pokazywanych na wystawie (każdy rok zapisano w osobnym wierszu).

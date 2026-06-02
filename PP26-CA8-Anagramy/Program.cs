@@ -1,4 +1,7 @@
-﻿string[] lines = File.ReadAllLines("anagram.txt");
+﻿string path = Path.Combine(Environment.CurrentDirectory, "../", "../", "../");
+
+//Zadanie 1
+string[] lines = File.ReadAllLines("anagram.txt");
 
 List<string> anagramLines = new List<string>();
 
@@ -37,5 +40,40 @@ foreach (string anagramLine in anagramLines)
 {
     Console.WriteLine(anagramLine);
 }
+Console.WriteLine();
 
-File.WriteAllLines("znalezione.txt", anagramLines);
+File.WriteAllLines(Path.Combine(path, "znalezione.txt"), anagramLines);
+
+
+
+//Zadanie 1.1
+string[] years = File.ReadAllLines("lata.txt");
+List<(string year, int count)> grouppedYears = new List<(string year, int count)>();
+
+foreach(string year in years)
+{
+    if(grouppedYears.Any(x => x.year == year))
+    {
+        int groupIndex = grouppedYears.FindIndex(x => x.year == year);
+        grouppedYears[groupIndex] = (year, grouppedYears[groupIndex].count + 1);
+    }
+    else
+    {
+        grouppedYears.Add((year, 1));
+    }
+}
+
+(string year, int count) max = grouppedYears[0];
+
+foreach (var item in grouppedYears)
+{
+    if (item.count > max.count)
+    {
+        max = item;
+    }
+}
+
+Console.WriteLine($"Najczęściej występuje rok {max.year} ({max.count} razy)");
+File.WriteAllText(Path.Combine(path, "ramy.txt"), $"Najczęściej występuje rok {max.year} ({max.count} razy)");
+
+

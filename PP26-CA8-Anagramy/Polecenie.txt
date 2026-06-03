@@ -8,3 +8,23 @@ Muzeum chce ustalić, w którym roku powstało najwięcej dzieł z obecnej wysta
 Obrazy te zostaną oprawione w złote ramy.
 Plik lata.txt zawiera 76 wierszy zawierających rok powstania poszczególnych 
 obrazów pokazywanych na wystawie (każdy rok zapisano w osobnym wierszu).
+
+Zadanie 1.2:
+Po zakończeniu wystawy trzeba przygotować eksponaty do zwrócenia muzeom, z których zostały wypożyczone. 
+Sporządzono w tym celu listę — numer każdego jej wiersza oznacza pozycję obrazu na wystawie, 
+zaś w wierszu zapisany jest sześciocyfrowy kod z oznaczeniem danego muzeum i obrazu:
+
+cyfry na pozycjach od 
+ do 
+ (od lewej strony) oznaczają numer muzeum,
+
+cyfry na pozycjach od 
+ do 
+ to oznaczenie obrazu w danym muzeum.
+
+Im większa jest liczba stanowiąca numer muzeum, tym dalej się ono znajduje. Obrazy należy ułożyć w takiej kolejności, 
+aby najpierw zostały wysłane dzieła należące do najbardziej odległych muzeów. W rezultacie wszystkie eksponaty wrócą na swoje miejsce w podobnym czasie.
+Przyjmijmy, że z każdego muzeum wypożyczono tylko jeden obraz.
+Plik lista.txt zawiera 76 liczb (każda zapisana w osobnym wierszu), stanowiących numery poszczególnych dzieł.
+Numery te się nie powtarzają.
+Przycisk umożliwiający pobranie pliku TXT z treścią zadania. Pobierz załącznik

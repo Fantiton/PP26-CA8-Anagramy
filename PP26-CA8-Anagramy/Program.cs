@@ -77,3 +77,24 @@ Console.WriteLine($"Najczęściej występuje rok {max.year} ({max.count} razy)")
 File.WriteAllText(Path.Combine(path, "ramy.txt"), $"Najczęściej występuje rok {max.year} ({max.count} razy)");
 
 
+
+//Zadanie 1.2
+string[] paintings = File.ReadAllLines("lista.txt");
+
+for (int i = 0; i < paintings.Length - 1; i++)
+{
+    for (int j = 0; j < paintings.Length - i - 1; j++)
+    {
+        int first = int.Parse(paintings[j].Substring(0, 3));
+        int second = int.Parse(paintings[j + 1].Substring(0, 3));
+
+        if (first < second)
+        {
+            string temp = paintings[j];
+            paintings[j] = paintings[j + 1];
+            paintings[j + 1] = temp;
+        }
+    }
+}
+
+File.WriteAllLines(Path.Combine(path, "kolejność.txt"), paintings);
